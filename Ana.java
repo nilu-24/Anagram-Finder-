@@ -15,7 +15,7 @@ public class Ana {
         for (int i = current_index; i < word.length; i++) {
           //check for no duplicates
             boolean check_for_duplicates = Helper.checkDuplicates(word, current_index, i);
-            if (check_for_duplicates) { //assuming it runs in O(1)
+            if (check_for_duplicates) { //runs in O(n) in worst case
                 //swap
                 Helper.swap(word, current_index, i); //runs in O(1)
 
